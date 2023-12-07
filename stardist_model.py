@@ -201,3 +201,29 @@ def train_test_split(X, Y):
     print('- training:       %3d' % len(X_trn))
     print('- validation:     %3d' % len(X_val))
     return X_trn, Y_trn, X_val, Y_val
+
+
+def plot(taus, scores):
+    import matplotlib.pyplot as plt
+
+    fig, (ax1,ax2) = plt.subplots(1,2, figsize=(15,5))
+
+    for m in ('precision', 'recall', 'accuracy', 'f1', 'mean_true_score', 'mean_matched_score', 'panoptic_quality'):
+        for result in scores:
+            stats = result['stats']
+            metric_values = [s._asdict()[m] for s in stats]
+            ax1.plot(taus, metric_values, '.-', lw=2, label=m)
+    ax1.set_xlabel(r'IoU threshold $\tau$')
+    ax1.set_ylabel('Metric value')
+
+
+    for m in ('fp', 'tp', 'fn'):
+        for result in scores:
+            stats = result['stats']
+            metric_values = [s._asdict()[m] for s in stats]
+            ax2.plot(taus, metric_values, '.-', lw=2, label=m)
+
+    ax2.set_xlabel(r'IoU threshold $\tau$')
+    ax2.set_ylabel('Number #')
+    ax2.grid()
+    ax2.legend()
