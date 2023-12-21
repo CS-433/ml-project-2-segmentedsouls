@@ -11,6 +11,12 @@ The following folders and files are integral to the Cellpose training and evalua
 - `cellpose.ipynb`: A notebook for evaluating our trained Cellpose model, it includes some visualization .
 - `cellpose/training`: Directory containing all training and validating cellpose data.
 
+  The structure of the cellpose training folder:
+  - control/ : has all images and masks needed to validate cellpose trained model
+  - final_segmentation/ contains the masks for mip_2.tif produces by cellpose
+  - images/ conatins the mip_2.tif image
+  - masks/ contains the manually segmented/ ground truth for mip_2.tif
+
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fEFF99tU)
