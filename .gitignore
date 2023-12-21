@@ -2,3 +2,10 @@ models/
 results/
 results_/
 __pycache__/
+image_labeled.tif
+image_mip_jp.jpg
+image_mip_lab_jp.jpg
+image.tif
+in1-sec_lab.jpg
+in1-sec.jpg
+in1-sec.tif
