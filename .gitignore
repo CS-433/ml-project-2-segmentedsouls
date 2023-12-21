@@ -1,3 +1,4 @@
 models/
 results/
 results_/
+__pycache__/
