@@ -6,7 +6,7 @@ This document provides a detailed overview of the processes and resources utiliz
 
 ## Stardist: 
 
-### Download weights and resources here and add the project folder inside the repo (same level as all the other folders eg;inputs, masks): https://drive.google.com/file/d/1CpCZ1GZamGl3kcfPDySYkWi4fgI56g3O/view?usp=sharing
+### Download weights and resources in a .zip file, decompress the folder and add the project folder inside the repo (same level as all the other folders eg;inputs, masks): https://drive.google.com/file/d/1CpCZ1GZamGl3kcfPDySYkWi4fgI56g3O/view?usp=sharing
 ## Files Description
 
 ### `cross_validation_stardist`
