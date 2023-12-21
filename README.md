@@ -1,24 +1,30 @@
 # Performing a 2D Nucleus Segmentation With Cellpose and StarDist on Xenium Data
 
 ## Overview
-This document outlines the process and resources used for performing 2D nucleus segmentation utilizing both Cellpose and StarDist on Xenium data.
+This document provides a detailed overview of the processes and resources utilized for performing 2D nucleus segmentation using Cellpose and StarDist on Xenium data.
 
-## Cellpose
-### Resources and Files
-The following folders and files are integral to the Cellpose training and evaluation:
+## Cellpose: Resources and Files
+Below is a comprehensive list of the key folders and files integral to the Cellpose training and evaluation:
 
-- `CellposeTrainingArena.ipynb`: This notebook contains the code for training models and collecting data, essential for cross-validation across different learning rates and epochs.
-- `cellpose.ipynb`: A notebook for evaluating our trained Cellpose model, it includes some visualization .
-- `cellpose/training`: Directory containing all training and validating cellpose data.
+### Notebooks
+- **`CellposeTrainingArena.ipynb`**: Contains code for training models and collecting data. It's pivotal for cross-validation across various learning rates and epochs.
+- **`cellpose.ipynb`**: Dedicated to the evaluation of our trained Cellpose model, this notebook includes several visualizations.
 
-  The structure of the cellpose training folder:
-  - control/ : has all images and masks needed to validate cellpose trained model
-  - final_segmentation/ contains the masks for mip_2.tif produces by cellpose
-  - images/ conatins the mip_2.tif image
-  - masks/ contains the manually segmented/ ground truth for mip_2.tif
+### Training Directory: `cellposetraining/`
+This directory encompasses all the necessary data for training and validating the Cellpose model.
 
-- {morphology}_validate_mask and {morphology}_validate contain the validation data used during Cellpose training
-- traindataHIL folders contain the training data, product of our rounds of Human in the loop iterations. 
+#### Subdirectories and Content
+- **`cellposetraining/control/`**: 
+  - Contains images and masks for validating the trained Cellpose model.
+  - `final_segmentation/`: Includes the Cellpose-produced masks for `mip_2.tif`.
+  - `images/`: Contains the `mip_2.tif` image.
+  - `masks/`: Houses manually segmented/ground truth masks for `mip_2.tif`.
+
+- **Validation Data**: 
+  - `cellposetraining/{morphology}_validate_mask` and `cellposetraining/{morphology}_validate`: These folders contain the validation data used during Cellpose training.
+
+- **Human-in-the-Loop Training Data**: 
+  - `cellposetraining/traindataHIL` and `cellposetraining/trainingdataHIL_mip`: Includes training data generated from our Human-in-the-Loop (HIL) iterations.
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fEFF99tU)
