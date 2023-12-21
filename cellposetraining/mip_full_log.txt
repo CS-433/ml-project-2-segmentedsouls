@@ -1,0 +1,404 @@
+cellpose version: 	2.2.3 
+platform:       	darwin 
+python version: 	3.11.5 
+torch version:  	2.0.1
+2023-12-19 21:08:16,344 [INFO] not all flows are present, running flow generation for all images
+2023-12-19 21:08:16,367 [INFO] 5 / 5 images in cellposetraining/traindataHIL_mip folder have labels
+2023-12-19 21:08:16,375 [INFO] >> cyto << model set to be used
+2023-12-19 21:08:16,375 [INFO] >>>> using CPU
+2023-12-19 21:08:16,376 [INFO] WARNING: MKL version on torch not working/installed - CPU version will be slightly slower.
+2023-12-19 21:08:16,376 [INFO] see https://pytorch.org/docs/stable/backends.html?highlight=mkl
+2023-12-19 21:08:16,462 [INFO] >>>> model diam_mean =  30.000 (ROIs rescaled to this size during training)
+#### TRAINING: CP_mip_lr0.2ep_700 LR: 0.2 epochs: 700 START###
+2023-12-19 21:08:16,601 [INFO] computing flows for labels
+100%|██████████| 5/5 [00:00<00:00, 19.32it/s]
+2023-12-19 21:08:16,868 [INFO] computing flows for labels
+
+100%|██████████| 8/8 [00:00<00:00, 13.18it/s]
+2023-12-19 21:08:17,508 [INFO] >>>> median diameter set to = 30
+2023-12-19 21:08:17,509 [INFO] >>>> mean of training label mask diameters (saved to model) 23.659
+2023-12-19 21:08:17,509 [INFO] >>>> training network with 2 channel input <<<<
+2023-12-19 21:08:17,510 [INFO] >>>> LR: 0.20000, batch_size: 8, weight_decay: 0.00010
+2023-12-19 21:08:17,510 [INFO] >>>> ntrain = 5, ntest = 8
+2023-12-19 21:08:17,511 [INFO] >>>> nimg_per_epoch = 8
+
+2023-12-19 21:08:22,813 [INFO] Epoch 0, Time  5.3s, Loss 0.8118, Loss Test 0.8520, LR 0.0000
+2023-12-19 21:08:27,247 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:08:42,528 [INFO] Epoch 5, Time 25.0s, Loss 0.5613, Loss Test 0.8154, LR 0.1111
+2023-12-19 21:08:59,361 [INFO] Epoch 10, Time 41.9s, Loss 0.4452, Loss Test 0.9540, LR 0.2000
+2023-12-19 21:09:31,440 [INFO] Epoch 20, Time 73.9s, Loss 0.4264, Loss Test 0.8627, LR 0.2000
+2023-12-19 21:10:03,480 [INFO] Epoch 30, Time 106.0s, Loss 0.4210, Loss Test 0.8627, LR 0.2000
+2023-12-19 21:10:36,686 [INFO] Epoch 40, Time 139.2s, Loss 0.3532, Loss Test 0.8016, LR 0.2000
+2023-12-19 21:11:12,233 [INFO] Epoch 50, Time 174.7s, Loss 0.3279, Loss Test 0.8341, LR 0.2000
+2023-12-19 21:11:51,068 [INFO] Epoch 60, Time 213.6s, Loss 0.3489, Loss Test 0.8466, LR 0.2000
+2023-12-19 21:12:29,949 [INFO] Epoch 70, Time 252.4s, Loss 0.3198, Loss Test 0.8283, LR 0.2000
+2023-12-19 21:13:07,025 [INFO] Epoch 80, Time 289.5s, Loss 0.3101, Loss Test 0.8174, LR 0.2000
+2023-12-19 21:13:41,545 [INFO] Epoch 90, Time 324.0s, Loss 0.3082, Loss Test 0.8091, LR 0.2000
+2023-12-19 21:14:15,031 [INFO] Epoch 100, Time 357.5s, Loss 0.3008, Loss Test 0.8340, LR 0.2000
+2023-12-19 21:14:18,127 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:14:50,680 [INFO] Epoch 110, Time 393.2s, Loss 0.2921, Loss Test 0.7967, LR 0.2000
+2023-12-19 21:15:25,695 [INFO] Epoch 120, Time 428.2s, Loss 0.2595, Loss Test 0.7896, LR 0.2000
+2023-12-19 21:16:01,286 [INFO] Epoch 130, Time 463.8s, Loss 0.2872, Loss Test 0.8177, LR 0.2000
+2023-12-19 21:16:38,738 [INFO] Epoch 140, Time 501.2s, Loss 0.2895, Loss Test 0.8458, LR 0.2000
+2023-12-19 21:17:14,733 [INFO] Epoch 150, Time 537.2s, Loss 0.2787, Loss Test 0.8305, LR 0.2000
+2023-12-19 21:17:52,506 [INFO] Epoch 160, Time 575.0s, Loss 0.2739, Loss Test 0.8299, LR 0.2000
+2023-12-19 21:18:34,550 [INFO] Epoch 170, Time 617.0s, Loss 0.2764, Loss Test 0.8185, LR 0.2000
+2023-12-19 21:19:12,236 [INFO] Epoch 180, Time 654.7s, Loss 0.2708, Loss Test 0.8403, LR 0.2000
+2023-12-19 21:19:49,701 [INFO] Epoch 190, Time 692.2s, Loss 0.2724, Loss Test 0.8597, LR 0.2000
+2023-12-19 21:20:25,943 [INFO] Epoch 200, Time 728.4s, Loss 0.2917, Loss Test 0.8405, LR 0.2000
+2023-12-19 21:20:29,606 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:21:01,898 [INFO] Epoch 210, Time 764.4s, Loss 0.2658, Loss Test 0.8605, LR 0.2000
+2023-12-19 21:21:40,970 [INFO] Epoch 220, Time 803.5s, Loss 0.2524, Loss Test 0.8791, LR 0.2000
+2023-12-19 21:22:22,290 [INFO] Epoch 230, Time 844.8s, Loss 0.2785, Loss Test 0.8551, LR 0.2000
+2023-12-19 21:23:02,072 [INFO] Epoch 240, Time 884.6s, Loss 0.2594, Loss Test 0.8262, LR 0.2000
+2023-12-19 21:23:40,646 [INFO] Epoch 250, Time 923.1s, Loss 0.2443, Loss Test 0.8777, LR 0.2000
+2023-12-19 21:24:12,948 [INFO] Epoch 260, Time 955.4s, Loss 0.2280, Loss Test 0.8835, LR 0.2000
+2023-12-19 21:24:45,358 [INFO] Epoch 270, Time 987.8s, Loss 0.2178, Loss Test 0.8607, LR 0.2000
+2023-12-19 21:25:14,725 [INFO] Epoch 280, Time 1017.2s, Loss 0.2301, Loss Test 0.8804, LR 0.2000
+2023-12-19 21:25:43,368 [INFO] Epoch 290, Time 1045.9s, Loss 0.2157, Loss Test 0.8866, LR 0.2000
+2023-12-19 21:26:12,027 [INFO] Epoch 300, Time 1074.5s, Loss 0.2098, Loss Test 0.8552, LR 0.2000
+2023-12-19 21:26:14,902 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:26:40,892 [INFO] Epoch 310, Time 1103.4s, Loss 0.2195, Loss Test 0.9108, LR 0.2000
+2023-12-19 21:27:11,774 [INFO] Epoch 320, Time 1134.3s, Loss 0.2300, Loss Test 0.8554, LR 0.2000
+2023-12-19 21:27:41,219 [INFO] Epoch 330, Time 1163.7s, Loss 0.2207, Loss Test 0.8698, LR 0.2000
+2023-12-19 21:28:10,123 [INFO] Epoch 340, Time 1192.6s, Loss 0.2219, Loss Test 0.9004, LR 0.2000
+2023-12-19 21:28:39,476 [INFO] Epoch 350, Time 1222.0s, Loss 0.2321, Loss Test 0.8802, LR 0.2000
+2023-12-19 21:29:09,056 [INFO] Epoch 360, Time 1251.5s, Loss 0.2303, Loss Test 0.8727, LR 0.2000
+2023-12-19 21:29:38,365 [INFO] Epoch 370, Time 1280.9s, Loss 0.2193, Loss Test 0.8860, LR 0.2000
+2023-12-19 21:30:06,882 [INFO] Epoch 380, Time 1309.4s, Loss 0.2309, Loss Test 0.9543, LR 0.2000
+2023-12-19 21:30:36,327 [INFO] Epoch 390, Time 1338.8s, Loss 0.2019, Loss Test 0.9263, LR 0.2000
+2023-12-19 21:31:05,127 [INFO] Epoch 400, Time 1367.6s, Loss 0.2221, Loss Test 0.9213, LR 0.2000
+2023-12-19 21:31:08,021 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:31:34,456 [INFO] Epoch 410, Time 1396.9s, Loss 0.2254, Loss Test 0.9639, LR 0.2000
+2023-12-19 21:32:03,042 [INFO] Epoch 420, Time 1425.5s, Loss 0.2188, Loss Test 0.9790, LR 0.2000
+2023-12-19 21:32:32,144 [INFO] Epoch 430, Time 1454.6s, Loss 0.1725, Loss Test 0.9891, LR 0.2000
+2023-12-19 21:33:03,048 [INFO] Epoch 440, Time 1485.5s, Loss 0.2073, Loss Test 0.9502, LR 0.2000
+2023-12-19 21:33:39,474 [INFO] Epoch 450, Time 1522.0s, Loss 0.1871, Loss Test 0.9451, LR 0.2000
+2023-12-19 21:34:13,447 [INFO] Epoch 460, Time 1555.9s, Loss 0.1827, Loss Test 0.9583, LR 0.2000
+2023-12-19 21:34:48,066 [INFO] Epoch 470, Time 1590.6s, Loss 0.2115, Loss Test 0.9052, LR 0.2000
+2023-12-19 21:35:22,397 [INFO] Epoch 480, Time 1624.9s, Loss 0.2102, Loss Test 0.9454, LR 0.2000
+2023-12-19 21:35:56,515 [INFO] Epoch 490, Time 1659.0s, Loss 0.2145, Loss Test 0.9307, LR 0.2000
+2023-12-19 21:36:31,012 [INFO] Epoch 500, Time 1693.5s, Loss 0.1945, Loss Test 0.9439, LR 0.2000
+2023-12-19 21:36:34,395 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:37:04,916 [INFO] Epoch 510, Time 1727.4s, Loss 0.2072, Loss Test 0.9340, LR 0.2000
+2023-12-19 21:37:38,368 [INFO] Epoch 520, Time 1760.9s, Loss 0.1928, Loss Test 0.9619, LR 0.2000
+2023-12-19 21:38:14,802 [INFO] Epoch 530, Time 1797.3s, Loss 0.2039, Loss Test 0.9405, LR 0.2000
+2023-12-19 21:38:47,333 [INFO] Epoch 540, Time 1829.8s, Loss 0.1995, Loss Test 0.9616, LR 0.2000
+2023-12-19 21:39:15,545 [INFO] Epoch 550, Time 1858.0s, Loss 0.2120, Loss Test 0.9287, LR 0.2000
+2023-12-19 21:39:46,003 [INFO] Epoch 560, Time 1888.5s, Loss 0.1870, Loss Test 1.0015, LR 0.2000
+2023-12-19 21:40:14,865 [INFO] Epoch 570, Time 1917.4s, Loss 0.1957, Loss Test 0.9787, LR 0.2000
+2023-12-19 21:40:45,113 [INFO] Epoch 580, Time 1947.6s, Loss 0.1950, Loss Test 1.0125, LR 0.2000
+2023-12-19 21:41:15,109 [INFO] Epoch 590, Time 1977.6s, Loss 0.1949, Loss Test 0.9902, LR 0.2000
+2023-12-19 21:41:44,586 [INFO] Epoch 600, Time 2007.1s, Loss 0.2014, Loss Test 0.9690, LR 0.2000
+2023-12-19 21:41:47,462 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+2023-12-19 21:42:13,323 [INFO] Epoch 610, Time 2035.8s, Loss 0.1961, Loss Test 0.9629, LR 0.1000
+2023-12-19 21:42:42,374 [INFO] Epoch 620, Time 2064.9s, Loss 0.1880, Loss Test 0.9752, LR 0.0500
+2023-12-19 21:43:12,587 [INFO] Epoch 630, Time 2095.1s, Loss 0.1844, Loss Test 0.9743, LR 0.0250
+2023-12-19 21:43:42,817 [INFO] Epoch 640, Time 2125.3s, Loss 0.1688, Loss Test 0.9821, LR 0.0125
+2023-12-19 21:44:12,903 [INFO] Epoch 650, Time 2155.4s, Loss 0.1743, Loss Test 0.9824, LR 0.0063
+2023-12-19 21:44:43,220 [INFO] Epoch 660, Time 2185.7s, Loss 0.1864, Loss Test 0.9829, LR 0.0031
+2023-12-19 21:45:12,579 [INFO] Epoch 670, Time 2215.1s, Loss 0.1718, Loss Test 0.9820, LR 0.0016
+2023-12-19 21:45:42,029 [INFO] Epoch 680, Time 2244.5s, Loss 0.1688, Loss Test 0.9850, LR 0.0008
+2023-12-19 21:46:11,603 [INFO] Epoch 690, Time 2274.1s, Loss 0.1682, Loss Test 0.9819, LR 0.0004
+2023-12-19 21:46:37,187 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.2ep_700
+#### TRAINING: CP_mip_lr0.2ep_700 LR: 0.2  empochs: 700END###
+2023-12-19 21:46:37,232 [INFO] not all flows are present, running flow generation for all images
+2023-12-19 21:46:37,265 [INFO] 5 / 5 images in cellposetraining/traindataHIL_mip folder have labels
+2023-12-19 21:46:37,283 [INFO] >> cyto << model set to be used
+2023-12-19 21:46:37,285 [INFO] >>>> using CPU
+2023-12-19 21:46:37,285 [INFO] WARNING: MKL version on torch not working/installed - CPU version will be slightly slower.
+2023-12-19 21:46:37,286 [INFO] see https://pytorch.org/docs/stable/backends.html?highlight=mkl
+2023-12-19 21:46:37,376 [INFO] >>>> model diam_mean =  30.000 (ROIs rescaled to this size during training)
+#### TRAINING: CP_mip_lr0.1ep_700 LR: 0.1 epochs: 700 START###
+2023-12-19 21:46:37,517 [INFO] computing flows for labels
+100%|██████████| 5/5 [00:00<00:00, 19.29it/s]
+2023-12-19 21:46:37,785 [INFO] computing flows for labels
+
+100%|██████████| 8/8 [00:00<00:00, 13.19it/s]
+2023-12-19 21:46:38,421 [INFO] >>>> median diameter set to = 30
+2023-12-19 21:46:38,422 [INFO] >>>> mean of training label mask diameters (saved to model) 23.659
+2023-12-19 21:46:38,422 [INFO] >>>> training network with 2 channel input <<<<
+2023-12-19 21:46:38,422 [INFO] >>>> LR: 0.10000, batch_size: 8, weight_decay: 0.00010
+2023-12-19 21:46:38,423 [INFO] >>>> ntrain = 5, ntest = 8
+2023-12-19 21:46:38,423 [INFO] >>>> nimg_per_epoch = 8
+
+2023-12-19 21:46:42,179 [INFO] Epoch 0, Time  3.8s, Loss 0.8118, Loss Test 0.8520, LR 0.0000
+2023-12-19 21:46:45,112 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 21:46:57,270 [INFO] Epoch 5, Time 18.8s, Loss 0.5905, Loss Test 0.8043, LR 0.0556
+2023-12-19 21:47:12,652 [INFO] Epoch 10, Time 34.2s, Loss 0.4214, Loss Test 0.8714, LR 0.1000
+2023-12-19 21:47:42,156 [INFO] Epoch 20, Time 63.7s, Loss 0.4208, Loss Test 0.8278, LR 0.1000
+2023-12-19 21:48:13,621 [INFO] Epoch 30, Time 95.2s, Loss 0.4220, Loss Test 0.8385, LR 0.1000
+2023-12-19 21:48:48,297 [INFO] Epoch 40, Time 129.9s, Loss 0.3594, Loss Test 0.8283, LR 0.1000
+2023-12-19 21:49:23,050 [INFO] Epoch 50, Time 164.6s, Loss 0.3320, Loss Test 0.8172, LR 0.1000
+2023-12-19 21:49:55,364 [INFO] Epoch 60, Time 196.9s, Loss 0.3551, Loss Test 0.8518, LR 0.1000
+2023-12-19 21:50:28,431 [INFO] Epoch 70, Time 230.0s, Loss 0.3326, Loss Test 0.8240, LR 0.1000
+2023-12-19 21:51:00,498 [INFO] Epoch 80, Time 262.1s, Loss 0.3192, Loss Test 0.8220, LR 0.1000
+2023-12-19 21:51:33,427 [INFO] Epoch 90, Time 295.0s, Loss 0.3027, Loss Test 0.8263, LR 0.1000
+2023-12-19 21:52:08,384 [INFO] Epoch 100, Time 330.0s, Loss 0.3010, Loss Test 0.8236, LR 0.1000
+2023-12-19 21:52:11,931 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 21:52:45,349 [INFO] Epoch 110, Time 366.9s, Loss 0.2936, Loss Test 0.8133, LR 0.1000
+2023-12-19 21:53:19,523 [INFO] Epoch 120, Time 401.1s, Loss 0.2573, Loss Test 0.7818, LR 0.1000
+2023-12-19 21:53:50,865 [INFO] Epoch 130, Time 432.4s, Loss 0.2946, Loss Test 0.8362, LR 0.1000
+2023-12-19 21:54:19,405 [INFO] Epoch 140, Time 461.0s, Loss 0.2946, Loss Test 0.8054, LR 0.1000
+2023-12-19 21:54:49,228 [INFO] Epoch 150, Time 490.8s, Loss 0.2746, Loss Test 0.8282, LR 0.1000
+2023-12-19 21:55:20,183 [INFO] Epoch 160, Time 521.8s, Loss 0.2816, Loss Test 0.8168, LR 0.1000
+2023-12-19 21:55:49,584 [INFO] Epoch 170, Time 551.2s, Loss 0.2873, Loss Test 0.8472, LR 0.1000
+2023-12-19 21:56:20,334 [INFO] Epoch 180, Time 581.9s, Loss 0.2785, Loss Test 0.8194, LR 0.1000
+2023-12-19 21:56:49,782 [INFO] Epoch 190, Time 611.4s, Loss 0.2785, Loss Test 0.8452, LR 0.1000
+2023-12-19 21:57:18,736 [INFO] Epoch 200, Time 640.3s, Loss 0.2957, Loss Test 0.8207, LR 0.1000
+2023-12-19 21:57:21,668 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 21:57:48,526 [INFO] Epoch 210, Time 670.1s, Loss 0.2742, Loss Test 0.8594, LR 0.1000
+2023-12-19 21:58:18,235 [INFO] Epoch 220, Time 699.8s, Loss 0.2663, Loss Test 0.8381, LR 0.1000
+2023-12-19 21:58:47,838 [INFO] Epoch 230, Time 729.4s, Loss 0.2877, Loss Test 0.8597, LR 0.1000
+2023-12-19 21:59:17,279 [INFO] Epoch 240, Time 758.9s, Loss 0.2604, Loss Test 0.8246, LR 0.1000
+2023-12-19 21:59:47,351 [INFO] Epoch 250, Time 788.9s, Loss 0.2516, Loss Test 0.8350, LR 0.1000
+2023-12-19 22:00:17,820 [INFO] Epoch 260, Time 819.4s, Loss 0.2407, Loss Test 0.8585, LR 0.1000
+2023-12-19 22:00:47,990 [INFO] Epoch 270, Time 849.6s, Loss 0.2327, Loss Test 0.8571, LR 0.1000
+2023-12-19 22:01:18,068 [INFO] Epoch 280, Time 879.6s, Loss 0.2419, Loss Test 0.8722, LR 0.1000
+2023-12-19 22:01:48,783 [INFO] Epoch 290, Time 910.4s, Loss 0.2303, Loss Test 0.8446, LR 0.1000
+2023-12-19 22:02:21,037 [INFO] Epoch 300, Time 942.6s, Loss 0.2167, Loss Test 0.8659, LR 0.1000
+2023-12-19 22:02:24,454 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 22:02:52,155 [INFO] Epoch 310, Time 973.7s, Loss 0.2266, Loss Test 0.8575, LR 0.1000
+2023-12-19 22:03:30,082 [INFO] Epoch 320, Time 1011.7s, Loss 0.2387, Loss Test 0.8726, LR 0.1000
+2023-12-19 22:04:06,455 [INFO] Epoch 330, Time 1048.0s, Loss 0.2259, Loss Test 0.8398, LR 0.1000
+2023-12-19 22:04:43,930 [INFO] Epoch 340, Time 1085.5s, Loss 0.2244, Loss Test 0.8634, LR 0.1000
+2023-12-19 22:05:19,609 [INFO] Epoch 350, Time 1121.2s, Loss 0.2400, Loss Test 0.8605, LR 0.1000
+2023-12-19 22:05:54,061 [INFO] Epoch 360, Time 1155.6s, Loss 0.2428, Loss Test 0.8568, LR 0.1000
+2023-12-19 22:06:30,110 [INFO] Epoch 370, Time 1191.7s, Loss 0.2275, Loss Test 0.8596, LR 0.1000
+2023-12-19 22:07:03,718 [INFO] Epoch 380, Time 1225.3s, Loss 0.2341, Loss Test 0.8821, LR 0.1000
+2023-12-19 22:07:37,249 [INFO] Epoch 390, Time 1258.8s, Loss 0.2053, Loss Test 0.8599, LR 0.1000
+2023-12-19 22:08:10,580 [INFO] Epoch 400, Time 1292.2s, Loss 0.2325, Loss Test 0.8701, LR 0.1000
+2023-12-19 22:08:13,909 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 22:08:43,869 [INFO] Epoch 410, Time 1325.4s, Loss 0.2344, Loss Test 0.8680, LR 0.1000
+2023-12-19 22:09:13,890 [INFO] Epoch 420, Time 1355.5s, Loss 0.2275, Loss Test 0.8982, LR 0.1000
+2023-12-19 22:09:43,837 [INFO] Epoch 430, Time 1385.4s, Loss 0.1863, Loss Test 0.8839, LR 0.1000
+2023-12-19 22:10:12,640 [INFO] Epoch 440, Time 1414.2s, Loss 0.2193, Loss Test 0.8679, LR 0.1000
+2023-12-19 22:10:41,595 [INFO] Epoch 450, Time 1443.2s, Loss 0.1977, Loss Test 0.8628, LR 0.1000
+2023-12-19 22:11:10,987 [INFO] Epoch 460, Time 1472.6s, Loss 0.1983, Loss Test 0.8534, LR 0.1000
+2023-12-19 22:11:40,855 [INFO] Epoch 470, Time 1502.4s, Loss 0.2249, Loss Test 0.8734, LR 0.1000
+2023-12-19 22:12:11,748 [INFO] Epoch 480, Time 1533.3s, Loss 0.2230, Loss Test 0.8813, LR 0.1000
+2023-12-19 22:12:41,920 [INFO] Epoch 490, Time 1563.5s, Loss 0.2283, Loss Test 0.8683, LR 0.1000
+2023-12-19 22:13:11,495 [INFO] Epoch 500, Time 1593.1s, Loss 0.2094, Loss Test 0.8975, LR 0.1000
+2023-12-19 22:13:14,416 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 22:13:41,344 [INFO] Epoch 510, Time 1622.9s, Loss 0.2136, Loss Test 0.8770, LR 0.1000
+2023-12-19 22:14:10,323 [INFO] Epoch 520, Time 1651.9s, Loss 0.2026, Loss Test 0.8991, LR 0.1000
+2023-12-19 22:14:39,869 [INFO] Epoch 530, Time 1681.4s, Loss 0.2139, Loss Test 0.8663, LR 0.1000
+2023-12-19 22:15:08,691 [INFO] Epoch 540, Time 1710.3s, Loss 0.2091, Loss Test 0.8996, LR 0.1000
+2023-12-19 22:15:38,361 [INFO] Epoch 550, Time 1739.9s, Loss 0.2218, Loss Test 0.8773, LR 0.1000
+2023-12-19 22:16:07,217 [INFO] Epoch 560, Time 1768.8s, Loss 0.1969, Loss Test 0.9208, LR 0.1000
+2023-12-19 22:16:37,622 [INFO] Epoch 570, Time 1799.2s, Loss 0.2134, Loss Test 0.8906, LR 0.1000
+2023-12-19 22:17:07,539 [INFO] Epoch 580, Time 1829.1s, Loss 0.2078, Loss Test 0.9243, LR 0.1000
+2023-12-19 22:17:37,795 [INFO] Epoch 590, Time 1859.4s, Loss 0.2054, Loss Test 0.9056, LR 0.1000
+2023-12-19 22:18:09,188 [INFO] Epoch 600, Time 1890.8s, Loss 0.2119, Loss Test 0.9089, LR 0.1000
+2023-12-19 22:18:12,669 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+2023-12-19 22:18:44,309 [INFO] Epoch 610, Time 1925.9s, Loss 0.2092, Loss Test 0.9197, LR 0.0500
+2023-12-19 22:19:18,529 [INFO] Epoch 620, Time 1960.1s, Loss 0.2041, Loss Test 0.9060, LR 0.0250
+2023-12-19 22:19:53,021 [INFO] Epoch 630, Time 1994.6s, Loss 0.2052, Loss Test 0.8975, LR 0.0125
+2023-12-19 22:20:28,200 [INFO] Epoch 640, Time 2029.8s, Loss 0.1857, Loss Test 0.9022, LR 0.0063
+2023-12-19 22:21:01,011 [INFO] Epoch 650, Time 2062.6s, Loss 0.1941, Loss Test 0.9087, LR 0.0031
+2023-12-19 22:21:34,114 [INFO] Epoch 660, Time 2095.7s, Loss 0.2059, Loss Test 0.9111, LR 0.0016
+2023-12-19 22:22:06,340 [INFO] Epoch 670, Time 2127.9s, Loss 0.1868, Loss Test 0.9090, LR 0.0008
+2023-12-19 22:22:41,895 [INFO] Epoch 680, Time 2163.5s, Loss 0.1841, Loss Test 0.9106, LR 0.0004
+2023-12-19 22:23:19,092 [INFO] Epoch 690, Time 2200.7s, Loss 0.1828, Loss Test 0.9079, LR 0.0002
+2023-12-19 22:23:48,813 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.1ep_700
+#### TRAINING: CP_mip_lr0.1ep_700 LR: 0.1  empochs: 700END###
+2023-12-19 22:23:48,855 [INFO] not all flows are present, running flow generation for all images
+2023-12-19 22:23:48,878 [INFO] 5 / 5 images in cellposetraining/traindataHIL_mip folder have labels
+2023-12-19 22:23:48,893 [INFO] >> cyto << model set to be used
+2023-12-19 22:23:48,894 [INFO] >>>> using CPU
+2023-12-19 22:23:48,895 [INFO] WARNING: MKL version on torch not working/installed - CPU version will be slightly slower.
+2023-12-19 22:23:48,895 [INFO] see https://pytorch.org/docs/stable/backends.html?highlight=mkl
+2023-12-19 22:23:48,982 [INFO] >>>> model diam_mean =  30.000 (ROIs rescaled to this size during training)
+#### TRAINING: CP_mip_lr0.01ep_700 LR: 0.01 epochs: 700 START###
+2023-12-19 22:23:49,120 [INFO] computing flows for labels
+100%|██████████| 5/5 [00:00<00:00, 19.01it/s]
+2023-12-19 22:23:49,393 [INFO] computing flows for labels
+
+100%|██████████| 8/8 [00:00<00:00, 13.31it/s]
+2023-12-19 22:23:50,023 [INFO] >>>> median diameter set to = 30
+2023-12-19 22:23:50,023 [INFO] >>>> mean of training label mask diameters (saved to model) 23.659
+2023-12-19 22:23:50,024 [INFO] >>>> training network with 2 channel input <<<<
+2023-12-19 22:23:50,024 [INFO] >>>> LR: 0.01000, batch_size: 8, weight_decay: 0.00010
+2023-12-19 22:23:50,024 [INFO] >>>> ntrain = 5, ntest = 8
+2023-12-19 22:23:50,025 [INFO] >>>> nimg_per_epoch = 8
+
+2023-12-19 22:23:53,896 [INFO] Epoch 0, Time  3.9s, Loss 0.8118, Loss Test 0.8520, LR 0.0000
+2023-12-19 22:23:56,905 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:24:09,425 [INFO] Epoch 5, Time 19.4s, Loss 0.6704, Loss Test 0.8178, LR 0.0056
+2023-12-19 22:24:25,293 [INFO] Epoch 10, Time 35.3s, Loss 0.4909, Loss Test 0.8187, LR 0.0100
+2023-12-19 22:24:55,916 [INFO] Epoch 20, Time 65.9s, Loss 0.4464, Loss Test 0.8343, LR 0.0100
+2023-12-19 22:25:25,979 [INFO] Epoch 30, Time 96.0s, Loss 0.4629, Loss Test 0.8423, LR 0.0100
+2023-12-19 22:25:56,312 [INFO] Epoch 40, Time 126.3s, Loss 0.3930, Loss Test 0.8436, LR 0.0100
+2023-12-19 22:26:27,006 [INFO] Epoch 50, Time 157.0s, Loss 0.3827, Loss Test 0.8280, LR 0.0100
+2023-12-19 22:26:56,754 [INFO] Epoch 60, Time 186.7s, Loss 0.4035, Loss Test 0.8180, LR 0.0100
+2023-12-19 22:27:26,760 [INFO] Epoch 70, Time 216.7s, Loss 0.3823, Loss Test 0.8145, LR 0.0100
+2023-12-19 22:27:56,564 [INFO] Epoch 80, Time 246.5s, Loss 0.3601, Loss Test 0.8047, LR 0.0100
+2023-12-19 22:28:27,737 [INFO] Epoch 90, Time 277.7s, Loss 0.3538, Loss Test 0.7997, LR 0.0100
+2023-12-19 22:28:59,225 [INFO] Epoch 100, Time 309.2s, Loss 0.3563, Loss Test 0.8005, LR 0.0100
+2023-12-19 22:29:02,336 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:29:32,244 [INFO] Epoch 110, Time 342.2s, Loss 0.3521, Loss Test 0.8235, LR 0.0100
+2023-12-19 22:30:02,250 [INFO] Epoch 120, Time 372.2s, Loss 0.3156, Loss Test 0.8207, LR 0.0100
+2023-12-19 22:30:36,001 [INFO] Epoch 130, Time 406.0s, Loss 0.3470, Loss Test 0.8081, LR 0.0100
+2023-12-19 22:31:08,594 [INFO] Epoch 140, Time 438.6s, Loss 0.3566, Loss Test 0.8049, LR 0.0100
+2023-12-19 22:31:39,939 [INFO] Epoch 150, Time 469.9s, Loss 0.3326, Loss Test 0.8111, LR 0.0100
+2023-12-19 22:32:11,393 [INFO] Epoch 160, Time 501.4s, Loss 0.3490, Loss Test 0.8143, LR 0.0100
+2023-12-19 22:32:43,566 [INFO] Epoch 170, Time 533.5s, Loss 0.3449, Loss Test 0.8064, LR 0.0100
+2023-12-19 22:33:18,958 [INFO] Epoch 180, Time 568.9s, Loss 0.3338, Loss Test 0.8085, LR 0.0100
+2023-12-19 22:33:55,002 [INFO] Epoch 190, Time 605.0s, Loss 0.3504, Loss Test 0.8162, LR 0.0100
+2023-12-19 22:34:31,026 [INFO] Epoch 200, Time 641.0s, Loss 0.3672, Loss Test 0.8234, LR 0.0100
+2023-12-19 22:34:34,687 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:35:07,295 [INFO] Epoch 210, Time 677.3s, Loss 0.3491, Loss Test 0.8180, LR 0.0100
+2023-12-19 22:35:45,168 [INFO] Epoch 220, Time 715.1s, Loss 0.3296, Loss Test 0.8156, LR 0.0100
+2023-12-19 22:36:23,501 [INFO] Epoch 230, Time 753.5s, Loss 0.3559, Loss Test 0.8149, LR 0.0100
+2023-12-19 22:36:58,363 [INFO] Epoch 240, Time 788.3s, Loss 0.3382, Loss Test 0.8177, LR 0.0100
+2023-12-19 22:37:33,197 [INFO] Epoch 250, Time 823.2s, Loss 0.3186, Loss Test 0.8157, LR 0.0100
+2023-12-19 22:38:08,188 [INFO] Epoch 260, Time 858.2s, Loss 0.3136, Loss Test 0.8119, LR 0.0100
+2023-12-19 22:38:42,152 [INFO] Epoch 270, Time 892.1s, Loss 0.3002, Loss Test 0.8158, LR 0.0100
+2023-12-19 22:39:15,797 [INFO] Epoch 280, Time 925.8s, Loss 0.3154, Loss Test 0.8200, LR 0.0100
+2023-12-19 22:39:46,109 [INFO] Epoch 290, Time 956.1s, Loss 0.3041, Loss Test 0.8216, LR 0.0100
+2023-12-19 22:40:15,991 [INFO] Epoch 300, Time 986.0s, Loss 0.2951, Loss Test 0.8209, LR 0.0100
+2023-12-19 22:40:18,907 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:40:46,065 [INFO] Epoch 310, Time 1016.0s, Loss 0.3033, Loss Test 0.8230, LR 0.0100
+2023-12-19 22:41:16,050 [INFO] Epoch 320, Time 1046.0s, Loss 0.3147, Loss Test 0.8195, LR 0.0100
+2023-12-19 22:41:45,805 [INFO] Epoch 330, Time 1075.8s, Loss 0.3072, Loss Test 0.8200, LR 0.0100
+2023-12-19 22:42:15,661 [INFO] Epoch 340, Time 1105.6s, Loss 0.3168, Loss Test 0.8181, LR 0.0100
+2023-12-19 22:42:45,653 [INFO] Epoch 350, Time 1135.6s, Loss 0.3158, Loss Test 0.8263, LR 0.0100
+2023-12-19 22:43:15,550 [INFO] Epoch 360, Time 1165.5s, Loss 0.3191, Loss Test 0.8267, LR 0.0100
+2023-12-19 22:43:45,448 [INFO] Epoch 370, Time 1195.4s, Loss 0.3048, Loss Test 0.8217, LR 0.0100
+2023-12-19 22:44:15,205 [INFO] Epoch 380, Time 1225.2s, Loss 0.3191, Loss Test 0.8310, LR 0.0100
+2023-12-19 22:44:46,536 [INFO] Epoch 390, Time 1256.5s, Loss 0.2830, Loss Test 0.8401, LR 0.0100
+2023-12-19 22:45:18,263 [INFO] Epoch 400, Time 1288.2s, Loss 0.3039, Loss Test 0.8297, LR 0.0100
+2023-12-19 22:45:21,324 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:45:50,080 [INFO] Epoch 410, Time 1320.1s, Loss 0.3193, Loss Test 0.8238, LR 0.0100
+2023-12-19 22:46:22,442 [INFO] Epoch 420, Time 1352.4s, Loss 0.3064, Loss Test 0.8271, LR 0.0100
+2023-12-19 22:46:52,191 [INFO] Epoch 430, Time 1382.2s, Loss 0.2473, Loss Test 0.8335, LR 0.0100
+2023-12-19 22:47:22,237 [INFO] Epoch 440, Time 1412.2s, Loss 0.2982, Loss Test 0.8287, LR 0.0100
+2023-12-19 22:47:52,934 [INFO] Epoch 450, Time 1442.9s, Loss 0.2722, Loss Test 0.8311, LR 0.0100
+2023-12-19 22:48:27,601 [INFO] Epoch 460, Time 1477.6s, Loss 0.2689, Loss Test 0.8319, LR 0.0100
+2023-12-19 22:49:01,914 [INFO] Epoch 470, Time 1511.9s, Loss 0.2930, Loss Test 0.8275, LR 0.0100
+2023-12-19 22:49:35,535 [INFO] Epoch 480, Time 1545.5s, Loss 0.3017, Loss Test 0.8317, LR 0.0100
+2023-12-19 22:50:10,482 [INFO] Epoch 490, Time 1580.5s, Loss 0.3037, Loss Test 0.8278, LR 0.0100
+2023-12-19 22:50:45,055 [INFO] Epoch 500, Time 1615.0s, Loss 0.2897, Loss Test 0.8345, LR 0.0100
+2023-12-19 22:50:48,402 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:51:18,578 [INFO] Epoch 510, Time 1648.6s, Loss 0.2843, Loss Test 0.8361, LR 0.0100
+2023-12-19 22:51:53,100 [INFO] Epoch 520, Time 1683.1s, Loss 0.2718, Loss Test 0.8297, LR 0.0100
+2023-12-19 22:52:27,886 [INFO] Epoch 530, Time 1717.9s, Loss 0.2868, Loss Test 0.8373, LR 0.0100
+2023-12-19 22:53:04,441 [INFO] Epoch 540, Time 1754.4s, Loss 0.2852, Loss Test 0.8294, LR 0.0100
+2023-12-19 22:53:40,393 [INFO] Epoch 550, Time 1790.4s, Loss 0.3094, Loss Test 0.8386, LR 0.0100
+2023-12-19 22:54:11,524 [INFO] Epoch 560, Time 1821.5s, Loss 0.2694, Loss Test 0.8354, LR 0.0100
+2023-12-19 22:54:42,892 [INFO] Epoch 570, Time 1852.9s, Loss 0.2913, Loss Test 0.8385, LR 0.0100
+2023-12-19 22:55:14,703 [INFO] Epoch 580, Time 1884.7s, Loss 0.2921, Loss Test 0.8375, LR 0.0100
+2023-12-19 22:55:44,803 [INFO] Epoch 590, Time 1914.8s, Loss 0.2825, Loss Test 0.8349, LR 0.0100
+2023-12-19 22:56:14,946 [INFO] Epoch 600, Time 1944.9s, Loss 0.2828, Loss Test 0.8335, LR 0.0100
+2023-12-19 22:56:17,854 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+2023-12-19 22:56:45,186 [INFO] Epoch 610, Time 1975.2s, Loss 0.2993, Loss Test 0.8241, LR 0.0050
+2023-12-19 22:57:15,208 [INFO] Epoch 620, Time 2005.2s, Loss 0.2838, Loss Test 0.8241, LR 0.0025
+2023-12-19 22:57:45,368 [INFO] Epoch 630, Time 2035.3s, Loss 0.2867, Loss Test 0.8139, LR 0.0013
+2023-12-19 22:58:15,356 [INFO] Epoch 640, Time 2065.3s, Loss 0.2765, Loss Test 0.8187, LR 0.0006
+2023-12-19 22:58:45,511 [INFO] Epoch 650, Time 2095.5s, Loss 0.2775, Loss Test 0.8237, LR 0.0003
+2023-12-19 22:59:15,532 [INFO] Epoch 660, Time 2125.5s, Loss 0.2902, Loss Test 0.8287, LR 0.0002
+2023-12-19 22:59:47,002 [INFO] Epoch 670, Time 2157.0s, Loss 0.2776, Loss Test 0.8276, LR 0.0001
+2023-12-19 23:00:18,889 [INFO] Epoch 680, Time 2188.9s, Loss 0.2784, Loss Test 0.8264, LR 0.0000
+2023-12-19 23:00:51,230 [INFO] Epoch 690, Time 2221.2s, Loss 0.2584, Loss Test 0.8272, LR 0.0000
+2023-12-19 23:01:19,919 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.01ep_700
+#### TRAINING: CP_mip_lr0.01ep_700 LR: 0.01  empochs: 700END###
+2023-12-19 23:01:19,966 [INFO] not all flows are present, running flow generation for all images
+2023-12-19 23:01:19,992 [INFO] 5 / 5 images in cellposetraining/traindataHIL_mip folder have labels
+2023-12-19 23:01:20,009 [INFO] >> cyto << model set to be used
+2023-12-19 23:01:20,009 [INFO] >>>> using CPU
+2023-12-19 23:01:20,010 [INFO] WARNING: MKL version on torch not working/installed - CPU version will be slightly slower.
+2023-12-19 23:01:20,010 [INFO] see https://pytorch.org/docs/stable/backends.html?highlight=mkl
+2023-12-19 23:01:20,096 [INFO] >>>> model diam_mean =  30.000 (ROIs rescaled to this size during training)
+#### TRAINING: CP_mip_lr0.001ep_700 LR: 0.001 epochs: 700 START###
+2023-12-19 23:01:20,237 [INFO] computing flows for labels
+100%|██████████| 5/5 [00:00<00:00, 19.29it/s]
+2023-12-19 23:01:20,504 [INFO] computing flows for labels
+
+100%|██████████| 8/8 [00:00<00:00, 13.43it/s]
+2023-12-19 23:01:21,130 [INFO] >>>> median diameter set to = 30
+2023-12-19 23:01:21,130 [INFO] >>>> mean of training label mask diameters (saved to model) 23.659
+2023-12-19 23:01:21,131 [INFO] >>>> training network with 2 channel input <<<<
+2023-12-19 23:01:21,131 [INFO] >>>> LR: 0.00100, batch_size: 8, weight_decay: 0.00010
+2023-12-19 23:01:21,131 [INFO] >>>> ntrain = 5, ntest = 8
+2023-12-19 23:01:21,132 [INFO] >>>> nimg_per_epoch = 8
+
+2023-12-19 23:01:25,197 [INFO] Epoch 0, Time  4.1s, Loss 0.8118, Loss Test 0.8520, LR 0.0000
+2023-12-19 23:01:28,272 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:01:41,297 [INFO] Epoch 5, Time 20.2s, Loss 0.6853, Loss Test 0.8222, LR 0.0006
+2023-12-19 23:01:57,092 [INFO] Epoch 10, Time 36.0s, Loss 0.5929, Loss Test 0.8336, LR 0.0010
+2023-12-19 23:02:27,803 [INFO] Epoch 20, Time 66.7s, Loss 0.5912, Loss Test 0.8690, LR 0.0010
+2023-12-19 23:02:58,027 [INFO] Epoch 30, Time 96.9s, Loss 0.5681, Loss Test 0.8828, LR 0.0010
+2023-12-19 23:03:33,702 [INFO] Epoch 40, Time 132.6s, Loss 0.4808, Loss Test 0.8875, LR 0.0010
+2023-12-19 23:04:09,523 [INFO] Epoch 50, Time 168.4s, Loss 0.4639, Loss Test 0.8725, LR 0.0010
+2023-12-19 23:04:45,231 [INFO] Epoch 60, Time 204.1s, Loss 0.4833, Loss Test 0.8632, LR 0.0010
+2023-12-19 23:05:20,887 [INFO] Epoch 70, Time 239.8s, Loss 0.4604, Loss Test 0.8592, LR 0.0010
+2023-12-19 23:05:57,541 [INFO] Epoch 80, Time 276.4s, Loss 0.4306, Loss Test 0.8523, LR 0.0010
+2023-12-19 23:06:32,001 [INFO] Epoch 90, Time 310.9s, Loss 0.4309, Loss Test 0.8483, LR 0.0010
+2023-12-19 23:07:05,408 [INFO] Epoch 100, Time 344.3s, Loss 0.4255, Loss Test 0.8421, LR 0.0010
+2023-12-19 23:07:08,663 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:07:38,852 [INFO] Epoch 110, Time 377.7s, Loss 0.4202, Loss Test 0.8599, LR 0.0010
+2023-12-19 23:08:11,923 [INFO] Epoch 120, Time 410.8s, Loss 0.3918, Loss Test 0.8398, LR 0.0010
+2023-12-19 23:08:44,888 [INFO] Epoch 130, Time 443.8s, Loss 0.4163, Loss Test 0.8362, LR 0.0010
+2023-12-19 23:09:14,758 [INFO] Epoch 140, Time 473.6s, Loss 0.4377, Loss Test 0.8330, LR 0.0010
+2023-12-19 23:09:44,567 [INFO] Epoch 150, Time 503.4s, Loss 0.4064, Loss Test 0.8313, LR 0.0010
+2023-12-19 23:10:13,821 [INFO] Epoch 160, Time 532.7s, Loss 0.4295, Loss Test 0.8345, LR 0.0010
+2023-12-19 23:10:43,940 [INFO] Epoch 170, Time 562.8s, Loss 0.4302, Loss Test 0.8286, LR 0.0010
+2023-12-19 23:11:13,690 [INFO] Epoch 180, Time 592.6s, Loss 0.4076, Loss Test 0.8273, LR 0.0010
+2023-12-19 23:11:43,340 [INFO] Epoch 190, Time 622.2s, Loss 0.4315, Loss Test 0.8451, LR 0.0010
+2023-12-19 23:12:13,026 [INFO] Epoch 200, Time 651.9s, Loss 0.4529, Loss Test 0.8461, LR 0.0010
+2023-12-19 23:12:15,892 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:12:42,897 [INFO] Epoch 210, Time 681.8s, Loss 0.4308, Loss Test 0.8297, LR 0.0010
+2023-12-19 23:13:12,458 [INFO] Epoch 220, Time 711.3s, Loss 0.4143, Loss Test 0.8327, LR 0.0010
+2023-12-19 23:13:42,329 [INFO] Epoch 230, Time 741.2s, Loss 0.4464, Loss Test 0.8275, LR 0.0010
+2023-12-19 23:14:12,075 [INFO] Epoch 240, Time 770.9s, Loss 0.4148, Loss Test 0.8234, LR 0.0010
+2023-12-19 23:14:41,673 [INFO] Epoch 250, Time 800.5s, Loss 0.4001, Loss Test 0.8287, LR 0.0010
+2023-12-19 23:15:11,317 [INFO] Epoch 260, Time 830.2s, Loss 0.3977, Loss Test 0.8171, LR 0.0010
+2023-12-19 23:15:41,055 [INFO] Epoch 270, Time 859.9s, Loss 0.3767, Loss Test 0.8166, LR 0.0010
+2023-12-19 23:16:10,922 [INFO] Epoch 280, Time 889.8s, Loss 0.4001, Loss Test 0.8188, LR 0.0010
+2023-12-19 23:16:40,690 [INFO] Epoch 290, Time 919.6s, Loss 0.3876, Loss Test 0.8126, LR 0.0010
+2023-12-19 23:17:10,411 [INFO] Epoch 300, Time 949.3s, Loss 0.3774, Loss Test 0.8136, LR 0.0010
+2023-12-19 23:17:13,342 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:17:40,357 [INFO] Epoch 310, Time 979.2s, Loss 0.3803, Loss Test 0.8183, LR 0.0010
+2023-12-19 23:18:12,577 [INFO] Epoch 320, Time 1011.4s, Loss 0.4023, Loss Test 0.8205, LR 0.0010
+2023-12-19 23:18:46,734 [INFO] Epoch 330, Time 1045.6s, Loss 0.3889, Loss Test 0.8139, LR 0.0010
+2023-12-19 23:19:21,211 [INFO] Epoch 340, Time 1080.1s, Loss 0.4008, Loss Test 0.8180, LR 0.0010
+2023-12-19 23:19:55,584 [INFO] Epoch 350, Time 1114.5s, Loss 0.3942, Loss Test 0.8269, LR 0.0010
+2023-12-19 23:20:29,812 [INFO] Epoch 360, Time 1148.7s, Loss 0.4118, Loss Test 0.8243, LR 0.0010
+2023-12-19 23:21:03,082 [INFO] Epoch 370, Time 1182.0s, Loss 0.3832, Loss Test 0.8189, LR 0.0010
+2023-12-19 23:21:37,021 [INFO] Epoch 380, Time 1215.9s, Loss 0.4092, Loss Test 0.8232, LR 0.0010
+2023-12-19 23:22:10,963 [INFO] Epoch 390, Time 1249.8s, Loss 0.3776, Loss Test 0.8270, LR 0.0010
+2023-12-19 23:22:46,651 [INFO] Epoch 400, Time 1285.5s, Loss 0.3805, Loss Test 0.8261, LR 0.0010
+2023-12-19 23:22:50,111 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:23:22,010 [INFO] Epoch 410, Time 1320.9s, Loss 0.4101, Loss Test 0.8282, LR 0.0010
+2023-12-19 23:23:54,223 [INFO] Epoch 420, Time 1353.1s, Loss 0.3930, Loss Test 0.8173, LR 0.0010
+2023-12-19 23:24:24,691 [INFO] Epoch 430, Time 1383.6s, Loss 0.3166, Loss Test 0.8121, LR 0.0010
+2023-12-19 23:24:54,780 [INFO] Epoch 440, Time 1413.6s, Loss 0.3881, Loss Test 0.8154, LR 0.0010
+2023-12-19 23:25:24,786 [INFO] Epoch 450, Time 1443.7s, Loss 0.3547, Loss Test 0.8071, LR 0.0010
+2023-12-19 23:25:55,027 [INFO] Epoch 460, Time 1473.9s, Loss 0.3515, Loss Test 0.8097, LR 0.0010
+2023-12-19 23:26:25,388 [INFO] Epoch 470, Time 1504.3s, Loss 0.3879, Loss Test 0.8042, LR 0.0010
+2023-12-19 23:26:55,108 [INFO] Epoch 480, Time 1534.0s, Loss 0.3934, Loss Test 0.8060, LR 0.0010
+2023-12-19 23:27:25,037 [INFO] Epoch 490, Time 1563.9s, Loss 0.3917, Loss Test 0.8063, LR 0.0010
+2023-12-19 23:27:54,917 [INFO] Epoch 500, Time 1593.8s, Loss 0.3888, Loss Test 0.8265, LR 0.0010
+2023-12-19 23:27:57,939 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:28:25,288 [INFO] Epoch 510, Time 1624.2s, Loss 0.3669, Loss Test 0.8204, LR 0.0010
+2023-12-19 23:28:55,330 [INFO] Epoch 520, Time 1654.2s, Loss 0.3610, Loss Test 0.8159, LR 0.0010
+2023-12-19 23:29:25,515 [INFO] Epoch 530, Time 1684.4s, Loss 0.3735, Loss Test 0.8210, LR 0.0010
+2023-12-19 23:29:55,574 [INFO] Epoch 540, Time 1714.4s, Loss 0.3678, Loss Test 0.8196, LR 0.0010
+2023-12-19 23:30:25,588 [INFO] Epoch 550, Time 1744.5s, Loss 0.4120, Loss Test 0.8303, LR 0.0010
+2023-12-19 23:30:56,101 [INFO] Epoch 560, Time 1775.0s, Loss 0.3499, Loss Test 0.8180, LR 0.0010
+2023-12-19 23:31:26,341 [INFO] Epoch 570, Time 1805.2s, Loss 0.3798, Loss Test 0.8186, LR 0.0010
+2023-12-19 23:31:56,523 [INFO] Epoch 580, Time 1835.4s, Loss 0.3898, Loss Test 0.8200, LR 0.0010
+2023-12-19 23:32:26,877 [INFO] Epoch 590, Time 1865.7s, Loss 0.3717, Loss Test 0.8187, LR 0.0010
+2023-12-19 23:32:57,070 [INFO] Epoch 600, Time 1895.9s, Loss 0.3677, Loss Test 0.8101, LR 0.0010
+2023-12-19 23:33:00,054 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+2023-12-19 23:33:33,608 [INFO] Epoch 610, Time 1932.5s, Loss 0.3920, Loss Test 0.8117, LR 0.0005
+2023-12-19 23:34:08,480 [INFO] Epoch 620, Time 1967.3s, Loss 0.3690, Loss Test 0.8136, LR 0.0003
+2023-12-19 23:34:43,565 [INFO] Epoch 630, Time 2002.4s, Loss 0.3810, Loss Test 0.8007, LR 0.0001
+2023-12-19 23:35:19,460 [INFO] Epoch 640, Time 2038.3s, Loss 0.3614, Loss Test 0.8011, LR 0.0001
+2023-12-19 23:35:54,373 [INFO] Epoch 650, Time 2073.2s, Loss 0.3626, Loss Test 0.8024, LR 0.0000
+2023-12-19 23:36:29,151 [INFO] Epoch 660, Time 2108.0s, Loss 0.3918, Loss Test 0.8116, LR 0.0000
+2023-12-19 23:37:03,457 [INFO] Epoch 670, Time 2142.3s, Loss 0.3820, Loss Test 0.8178, LR 0.0000
+2023-12-19 23:37:38,282 [INFO] Epoch 680, Time 2177.2s, Loss 0.3641, Loss Test 0.8146, LR 0.0000
+2023-12-19 23:38:12,599 [INFO] Epoch 690, Time 2211.5s, Loss 0.3572, Loss Test 0.8200, LR 0.0000
+2023-12-19 23:38:41,833 [INFO] saving network parameters to cellposetraining/traindataHIL_mip/models/CP_mip_lr0.001ep_700
+#### TRAINING: CP_mip_lr0.001ep_700 LR: 0.001  empochs: 700END###
