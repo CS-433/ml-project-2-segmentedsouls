@@ -19,8 +19,9 @@ This script is dedicated to visualizing the data in the context of the StarDist 
 This script includes the code for training the StarDist model. It sets up the model architecture, compiles it with the necessary configurations, and trains it on the provided dataset.
 
 ### `stardist.ipynb`
+#### THIS SHOULD BE THE FIRST FILE YOU RUN TO DOWNLOAD THE DEPENDENCIES
 This Jupyter notebook serves as a comprehensive guide and demonstration of the entire workflow. It walks through cross-validation, data visualization, model training, and evaluation, providing a hands-on experience with the StarDist model.
-You can choose what you whant to try by changing the global variable in the beggining of the notebook
+You can choose what you want to try by changing the global variable at the beginning of the notebook
 
 
 ## Cellpose: Resources and Files
