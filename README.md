@@ -17,6 +17,8 @@ The following folders and files are integral to the Cellpose training and evalua
   - images/ conatins the mip_2.tif image
   - masks/ contains the manually segmented/ ground truth for mip_2.tif
 
+- {morphology}_validate_mask and {morphology}_validate contain the validation data used during Cellpose training
+- traindataHIL folders contain the training data, product of our rounds of Human in the loop iterations. 
 
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/fEFF99tU)
